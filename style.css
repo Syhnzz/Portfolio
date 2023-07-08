@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    background-color: #3c48df;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    height: 60px;
+    overflow: hidden;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    background: rgba(29,33,61,0.5);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu {
+    position: absolute;
+    left: 90px;  
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    margin-left: 40px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: purple;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    background: url(images/Background-Portfolio.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.tittle {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    top: 350px;
+    left: 100px;
+    font-weight: bolder;
+}
+
+.anim1 {
+    top: 500px;
+    left: 100px;
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+  }
+  
+  .anim1 span {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  
+  .message {
+    background-color: white;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 100px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+  .sidebar {
+    width: 90px;
+    height: 100vh;
+    background: rgba(29,31,58,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .social-links {
+    width: 45px;
+    display: block;
+    margin: 220px auto 0;
+    text-align: center;
+  }
+
+  .social-links img{
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .photo {
+    top: 80px;
+    left: 10%;
+    background-image: url(images/Photo.png);
+    height: 80vh;
+    background-size: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-right: 150px;
+    font-size: 20px;
+  }
+
+
+.scroll-down-arrow {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+.scroll-down-link {
+    position: absolute;
+    z-index: 100;
+    cursor:pointer;
+    height: 60px;
+    width: 80px;
+    margin: 0px 0 0 -40px;
+    line-height: 60px;
+    left: 50%;
+    bottom: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    -webkit-animation: fade_move_down 2s ease-in-out infinite;
+    -moz-animation:    fade_move_down 2s ease-in-out infinite;
+    animation:         fade_move_down 2s ease-in-out infinite;
+}
+@-webkit-keyframes fade_move_down {
+      0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+      50%  { opacity: 1;  }
+      100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+
+@-moz-keyframes fade_move_down {
+      0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+      50%  { opacity: 1;  }
+      100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+
+@keyframes fade_move_down {
+      0%   { transform:translate(0,-20px); opacity: 0;  }
+      50%  { opacity: 1;  }
+      100% { transform:translate(0,20px); opacity: 0; }
+}
+
+.intro {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+
+.image1{
+    background-image: url(images/Sil.png);
+    height: 80vh;
+    background-size: 300px;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.myskill{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+
+.skill{
+  list-style: none;
+  width: 500px;
+  margin: 60px auto;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill li{
+  margin: 20px 0;
+  padding: 10px;
+
+}
+
+.bar{
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.htmlcss{
+  width: 90%;
+}
+
+.Javascript{
+  width: 60%;
+}
+
+.PHP{
+  width: 10%;
+}
+
+.Python{
+  width: 80%;
+}
+
+.project{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 90px 0;
+  right: 30%;
+}
+
+.container .card{
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05)
+              inset -5px -5px 5px rgba(255, 255, 255, 0.5)
+              -5px -5px 5px rgba(0, 0, 0, 0.05)
+              -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.container .card .box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card:hover .box{
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29cc);
+}
+
+.container .card .box .content{
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2{
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .card:hover .box .content h2{
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.container .card:hover .box .content h3{
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container .card .box .content p{
+  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+}
+.titre-contact{
+  text-align: center;
+}
+
